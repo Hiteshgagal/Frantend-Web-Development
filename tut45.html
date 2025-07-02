@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid + Media Queries</title>
+    <style>
+        .container {
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-areas:
+                'navbar navbar navbar navbar'
+                'section section section aside'
+                'footer footer footer footer';
+
+        }
+
+        nav {
+            grid-area: navbar;
+        }
+
+        section {
+            grid-area: section;
+        }
+
+        aside {
+            grid-area: aside;
+        }
+
+        footer {
+            grid-area: footer;
+            text-align: center;
+        }
+
+        .bdr {
+            border: 2px solid black;
+            padding: 10px 23px;
+            background-color: wheat;
+        }
+
+        @media only screen and (max-width:300px) {
+
+            body {
+                background-color: red;
+            }
+            .container {
+                grid-template-areas:
+                    'navbar navbar navbar navbar'
+                    'section section section section'
+                    'aside aside aside aside'
+                    'footer footer footer footer';
+            }
+            span{
+                display: block;
+                text-align: center;
+            }
+            aside{
+                display: none;
+            }
+        }
+
+
+        @media only screen and (min-width:300px) and (max-width:500px) {
+
+            body {
+                background-color: blue;
+            }
+            .container {
+                grid-template-areas:
+                    'navbar navbar navbar navbar'
+                    'section section section section'
+                    'aside aside aside aside'
+                    'footer footer footer footer';
+            }
+            span{
+                display: block;
+                text-align: center;
+            }
+      aside{
+        display: none;
+      }
+        }
+        
+        
+
+
+        @media only screen and (min-width:500px) and (max-width:800px) {
+
+            body {
+                background-color: yellow;
+            }
+
+            .container {
+                grid-template-areas:
+                    'navbar navbar navbar navbar'
+                    'section section section section'
+                    'aside aside aside aside'
+                    'footer footer footer footer';
+            }
+            span{
+                display: block;
+                text-align: center;
+            }
+        }
+
+
+        @media only screen and (min-width:800px) {
+
+            body {
+                background-color: green;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <nav class="bdr">
+            <span>Home</span>
+            <span>About</span>
+            <span>Services</span>
+            <span>Contact</span>
+        </nav>
+        <section class="bdr">
+            <h2>Learn CSS in Hindi</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga quod doloremque necessitatibus! Iusto voluptatum quidem debitis eius accusamus voluptates, iure nobis et, quaerat vitae quasi accusantium temporibus eaque, illo natus aspernatur ea dolor molestiae ad dolorum dicta? Delectus aliquid eius quo repellat deleniti quisquam dignissimos perferendis sed voluptate modi molestias laborum ut deserunt iusto nihil id dolorum, eligendi consectetur officia dolor unde recusandae dolorem. Corrupti reiciendis esse repellat itaque accusantium officiis atque veritatis soluta, nobis debitis vero quia facere quos cupiditate! Accusantium quam quia, impedit aspernatur ipsum ipsa sunt dicta temporibus numquam culpa quas suscipit, eligendi blanditiis nostrum reiciendis quod sequi quaerat itaque atque, error sapiente perferendis! Maxime tempore, temporibus explicabo quisquam possimus quis aspernatur architecto dolore illum accusamus repudiandae nesciunt quo distinctio odio consectetur nobis assumenda officiis at. Vel iste labore ullam doloribus alias laboriosam quasi dolorem quod eum distinctio nostrum culpa velit officia harum, iusto quam ex. In?</p>
+        </section>
+        <aside class="bdr">
+            <h1>More About As</h1>
+        </aside>
+    </div>
+    <footer class="bdr">
+        Copyright CodeWithHarry 2020
+    </footer>
+</body>
+
+
+</html>

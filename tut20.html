@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Models</title>
+    <style>
+         * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            background-color: #e6cdf8;
+        }
+
+        .container {
+            background-color: rgb(222, 135, 144);
+            border: 2px solid red;
+            /* we can set margin/padding top, bottom, left, right like this */
+            /*padding/margin-top: 100p 50px;   */
+            /*padding/margin-bottom: 100px 50px;  */
+            /*padding/margin-left: 100px 50px;  */
+            /*padding/margin-right: 100px 50px;  */
+            /* padding /margin: top right bottom left; */
+            /* padding: 23px 56px 6px 78px; */
+            /* padding/margin=y[top/bottom] x{left/right} */
+            padding: 34px 19px;
+            /* margin: 23px 56px 6px 78px; */
+            margin: 14px 19px;
+            border-radius: 23px;
+            width: 533px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h3>This is My Heading</h3>
+        <p id="first">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis corporis non, itaque laboriosam
+            nulla odit sed dignissimos omnis incidunt perspiciatis nesciunt pariatur quod.</p>
+    </div>
+    <div class="container">
+        <h3>This is My Heading</h3>
+        <p id="second">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis corporis non, itaque laboriosam
+            nulla odit sed dignissimos omnis incidunt perspiciatis nesciunt pariatur quod.</p>
+    </div>
+    <div class="container">
+        <h3>This is My Heading</h3>
+        <p id="third">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis corporis non, itaque laboriosam
+            nulla odit sed dignissimos omnis incidunt perspiciatis nesciunt pariatur quod.</p>
+    </div>
+
+</body>
+
+</html>

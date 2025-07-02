@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Shadow and Text Shadow</title>
+    <style>
+        .container {
+            display: flex;
+        }
+
+        .card {
+            padding: 23px 12px;
+            margin: 23px 12px;
+            /* border: 2px solid red; */
+            background-color: aqua;
+            /* box-shadow: ofset-x, ofset-y, color; */
+            /* box-shadow: 10px 13px green; */
+            /* box-shadow: -10px -13px green; */
+            /* box-shadow: ofset-x ofset-y blur-radius color; */
+            /* box-shadow: 5px 13px 19px green; */
+            /* box-shadow: ofset-x ofset-y blur-radius sptead-radius color; */
+            /* box-shadow: -5px -13px 19px 34px green; */
+            /* box-shadow: -5px -13px 19px 34px rgba(3, 40, 75, 0.5); */
+            box-shadow: inset 3px 5px green, 4px 6px red;
+        }
+        .card h2{
+            /* text-shadow: x y color; */
+            /* text-shadow: 3px 4px red; */
+            /* text-shadow: x y blur color; */
+            /* text-shadow: 3px 4px 4px green; */
+            text-shadow: -3px -4px -4px rgb(255, 255, 255);
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card" id="car-1">
+            <h2>This is C++ Cource</h2>
+            <p> I have started C++ course which does mean that we will stop this cource. we will continue this is course
+                to completion.Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque dicta ullam possimus
+                incidunt rem ad dignissimos sequi eius numquam deserunt aliquid corporis fuga omnis quod quaerat, beatae minus
+                voluptatibus obcaecati quam maxime? Veniam, rerum?</p>
+        </div>
+        <div class="card" id="car-2">
+            <h2>This is HTML Course</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque dicta ullam possimus incidunt rem ad
+                dignissimos sequi eius numquam deserunt aliquid corporis fuga omnis quod quaerat, beatae minus
+                voluptatibus obcaecati quam maxime? Veniam, rerum?</p>
+        </div>
+        <div class="card" id="car-3">
+            <h2>Card3</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque dicta ullam possimus incidunt rem ad
+                dignissimos sequi eius numquam deserunt aliquid corporis fuga omnis quod quaerat, beatae minus
+                voluptatibus obcaecati quam maxime? Veniam, rerum?</p>
+        </div>
+    </div>
+</body>
+
+</html>

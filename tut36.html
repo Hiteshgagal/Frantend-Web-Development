@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyframs and Animation</title>
+    <style>
+        .container {
+            background-color: greenyellow;
+        }
+
+        .box {
+            width: 250px;
+            height: 250px;
+            background-color: green;
+            position: relative;
+            /* animation: harry1; */
+            animation: harry2;
+            animation-duration: 5s;
+            /* animation-timing-function: ease-in-out; */
+            /* animation-delay: 3s; */
+            animation-iteration-count: 2;
+            /* animation-fill-mode: alternate; */
+
+            /* animation-direction: reverse; */
+            
+            /* short hand */
+            /* animation: name duration timing-function delay iteration-count fill-mode; */
+            /* animation: harry2 5s ease 2s 3 alternate ; */
+        }
+
+        @keyframes harry2 {
+            0% {
+                top: 0px;
+                left: 0px;
+            }
+
+            25% {
+                top: 250px;
+                left: 0px;
+            }
+
+            75% {
+                top: 250p;
+                left: 250px;
+            }
+
+            100% {
+                top: 0px;
+                left: 250px;
+            }
+        }
+
+        @keyframes harry1 {
+            from {
+                width: 200px;
+            }
+
+            to {
+                width: 1400px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            This is box
+        </div>
+    </div>
+</body>
+
+</html>

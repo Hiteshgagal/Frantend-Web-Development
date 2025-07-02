@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow Functions</title>
+</head>
+<body>
+     <div class="container">
+        This is Arrow Function tutorial.
+     </div>
+     <script>
+    //    Arrow  Function 
+    //arrow function is a short hand in j
+        // let greet =  ()=> {
+        //     console.log("good morning");
+        // }
+        let greet =  () => console.log("good morning");
+        
+        
+        // let sum2 = (a, b)=>{
+        //     return a+b;
+        // };
+
+        //short cut se chhota short cut
+        let sum2 = (a, b) => a+b;
+        let half = a => a/2;
+    
+        // function greet(){
+            //     console.log("good morning");
+            // }
+            greet();
+            setTimeout(() => {
+                console.log("We are inside settimeout")
+            }, 3000);
+
+        let obj1={
+            greeting: "good motning ",
+            names: ["Haarry", "hitesh", "chetan", "kishan"],
+            speak(){
+                this.names.forEach((student)=>{
+                    console.log(this.greeting + "hello my friend " + student);
+                })
+            }
+        }
+       obj1.speak();
+        // =  ()=> {} this arrows are the short hand of js
+     </script>
+</body>
+</html>

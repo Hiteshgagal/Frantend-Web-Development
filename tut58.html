@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript SetTimeOut and ClearTimeOut</title>
+</head>
+<body>
+    <div class="container">
+        Time now is <span id="time"></span>
+    </div>
+    <script>
+         console.log("This is tutorial 58");
+
+         //setTimeOut --> Alllows us to run the function once after the interval of time
+         //ClearTimeOut --> Alllows us to run the function repeatedly after the interval of time
+//setTime Out
+        //  function greet(name, byeText){
+        //      console.log("Hello Good Morning " + name + " " + byeText);
+        //  }
+        //  setTimeout(greet, 5000, "Harry", "Take Care");
+         // setTimeOut(greet(), 12000); --> Wrong as it is calling the function onside setTimeOut
+
+         //clearTimeOut
+         function greet(name, byeText){
+             console.log("Hello Good Morning " + name + " " + byeText);
+         }
+    //   timeOut = setTimeout(greet, 5000, "Harry", "Take Care");
+    //   console.log(timeOut);
+
+    //   clearTimeout(timeOut);
+
+   // setInterval = settime out
+   // clear interval =  cleartime out
+  //    setInterval(greet, 1000, "harry", "Good Night");
+    //  intervalId = setInterval(greet, 1000, "harry", "Good Night");
+    //  clearInterval(intervalId)
+
+    // in the wbsite add date ane time function
+        function displayTime(){
+            time = new Date();
+            console.log(time);
+            document.getElementById('time').innerHTML = time;
+        }
+        setInterval(displayTime, 1000);
+       
+        
+    </script>
+</body>
+</html>

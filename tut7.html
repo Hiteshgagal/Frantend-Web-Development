@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table and Lists</title>
+</head>
+<style>
+    table{
+        border: 2px solid red;
+    }
+    td{
+        border: 2px solid red;
+    }
+    th{
+        border: 2px solid red;
+    }
+
+</style>
+<body>
+   <ul type="circle">
+    <li>this is first item of my unordered lists</li>
+    <li>this is second item of my unordered lists</li>
+    <li>
+        <ul>
+            <li>Another one</li>
+            <li>Another two</li>
+            <li>Another three</li>
+        </ul>
+    </li>
+    <li>this is third item of my unordered lists</li>
+   </ul> 
+
+   <ol type="i">
+    <li>this is first item of my ordered lists</li>
+    <li>
+        <ul>
+            <li>Another one</li>
+            <li>Another two</li>
+            <li>Another three</li>
+        </ul>
+    </li>
+    <li>this is second item of my ordered lists</li>
+    <li>this is third item of my ordered lists</li>
+   </ol>
+   
+   <dl>
+    <dt>HIT</dt>
+    <dd>
+        this is second item of my ordered lists
+        this is third item of my ordered lists
+    </dd>
+    <dt>HIT</dt>
+    <dd>
+        this is second item of my ordered lists
+        this is third item of my ordered lists
+    </dd>
+    <dt>HIT</dt>
+    <dd>
+        this is second item of my ordered lists
+        this is third item of my ordered lists
+    </dd>
+   </dl>
+   <!-- Table  -->
+<h3>HTML Table</h3>
+<table >
+    <thead >
+        <tr  >
+            <th colspan="2" >Name</th>
+            <th>Employee id</th>
+            <th>Employee role</th>
+        </tr>
+
+    </thead>
+    <tbody>
+        <tr>
+    <td > Hitesh</td>
+    <td> 260198</td>
+    <td> Developer</td>
+</tr>
+<tr>
+    <td> harry</td>
+    <td rowspan="2"> 260199</td>
+    <td> programer</td>
+</tr>
+<tr>
+    <td> chetan</td>
+    <td> 260200</td>
+    <td> HTML Expart</td>
+</tr>
+    </tbody>
+    <tfoot>
+        <tr></tr>
+            <td colspan="2"> Hiy</td>
+            <td rowspan=""> 260201</td>
+    
+        </tr>
+    </tfoot>
+</table>
+
+
+</body>
+</html>

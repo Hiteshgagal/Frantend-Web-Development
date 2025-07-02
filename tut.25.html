@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>document</title>
+    <style>
+        /*css position:absolute,relative,static(je pelethi j hoy),fixed,sticky */
+        .container{
+            border: 3px solid black;
+            height:1400px;
+            background-color: aqua;
+        }
+.box{
+    display: inline-block;
+    border: 2px solid red;
+    width: 150px;
+    height: 150px;
+    margin: 2px;
+}
+#box3{
+    /* relative: relative to its normal position and will a gap at its position */
+    /* position:relative; */
+    /* absolute: relartive to the position of its first parent */
+    /* position: absolute; 
+    left: 134px;
+    top: 34px;  */
+    /* fixed:  position the elements relative to the browser window */
+    /* position: fixed;
+    right: 4px;
+    top: 34px; */
+    /* stiky: position the in tthe top and scroll. hits position stop  */
+    position: sticky; 
+    top: 3px;
+    
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <div class="box" id="box1">1</div>
+        <div class="box" id="box2">2</div>
+        <div class="box" id="box3">3</div>
+        <div class="box" id="box4">4</div>
+    </div>
+</body>
+</html>
